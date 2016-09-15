@@ -3,6 +3,105 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+/* Used in every view */
+
 body {
 	font-size: 16px !important;
 }
+
+.quote {
+	color:#fff;
+	background-color: #803E98;
+	font-size: 22px;
+	text-align: center;
+	padding: 20px 0px;
+
+	& span {
+		font-size: 60px;
+	}
+}
+
+.sentence {
+
+}
+
+.author {
+	text-align: right;
+}
+
+.banner-home {
+	background: image-url('banner_home.png') no-repeat center center !important;
+	background-size: cover !important;
+	height: 500px;
+}
+
+.small-banner {
+	background: image-url('banner_home.png') no-repeat center center !important;
+	background-size: cover !important;
+	height: 330px;
+}
+
+/* HEADER */
+
+.the-navbar {
+	margin-bottom: 0px !important;
+	border-radius: 0px !important;
+	background-color: #fff;
+	color:purple;
+}
+
+/* INICIO */
+
+.text {
+	text-align: center;
+	padding: 50px 0px;
+
+	& p {
+		padding: 25px 275px;
+	}
+}
+
+.small-purple-line {
+	width: 300px;
+	height: 20px;
+	background-color: purple;
+	display: block;
+	margin: 0px auto;
+}
+
+.valores {
+
+	margin: 50px 0px;
+
+	& > div {
+		border:1px solid purple;
+		padding: 40px 30px 0px 30px;
+	}
+
+	& h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	& img {
+		display: block;
+		margin: 0px auto;
+	}
+}
+
+.valores-purple-line {
+	width: 90%;
+	height: 15px;
+	background-color: purple;
+	display: block;
+	margin: 40px auto 0px auto;
+}
+
+/* NOSOTROS */
+
+/* ¿COMO CONTRIBUIR? */
+
+/* PROGRAMA SOCIAL */
+
+/* CONTACTO */
+
