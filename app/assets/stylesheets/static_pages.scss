@@ -9,6 +9,9 @@ body {
 	font-size: 16px !important;
 }
 
+$primary-purple: #7F3F98;
+$secondary-purple: #836C8E;
+
 .quote {
 	color:#fff;
 	background-color: #803E98;
@@ -30,13 +33,13 @@ body {
 }
 
 .banner-home {
-	background: image-url('banner_home.png') no-repeat center center !important;
+	background: image-url('h_banner.jpg') no-repeat center center !important;
 	background-size: cover !important;
 	height: 500px;
 }
 
 .small-banner {
-	background: image-url('banner_home.png') no-repeat center center !important;
+	background: image-url('h_bannerchico.jpg') no-repeat center center !important;
 	background-size: cover !important;
 	height: 330px;
 }
@@ -44,10 +47,66 @@ body {
 /* HEADER */
 
 .the-navbar {
-	margin-bottom: 0px !important;
+	margin-bottom: 10px !important;
 	border-radius: 0px !important;
 	background-color: #fff;
-	color:purple;
+	color:$primary-purple;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav {
+
+	position: absolute;
+	right: 50px;
+	bottom: 0;
+
+	 & a {
+	 	color:$primary-purple;
+	 	border-right: 2px solid $primary-purple;
+
+	 	&:hover {
+	 		color:#fff;
+	 		background-color: $secondary-purple !important;
+	 	}
+	 }
+}
+
+.navactive {
+	background-color: $secondary-purple;
+
+	& a  {
+		color:#fff;
+	}
+}
+
+.the-mail {
+	position: absolute;
+	color: purple;
+	right: 25px;
+	top: 10px;
+}
+
+.navbar-toggle {
+	position: absolute !important;
+	right: 0px;
+	top: 20px;
+}
+
+.navbar-toggle > .icon-bar {
+	background-color: #000 !important;
+}
+
+/* FOOTER */
+
+.footer {
+	background-color: #000;
+	padding: 25px 0px;
+	color:#fff;
+}
+
+.links > a {
+	margin-left: 20px;
+	color:#fff;
 }
 
 /* INICIO */
@@ -97,11 +156,98 @@ body {
 	margin: 40px auto 0px auto;
 }
 
+.carousel {
+	height: 300px;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right  {
+	color: black !important;
+}
+
+.carousel {
+	text-align: center;
+}
+
+.carousel-control {
+	background-image: none !important;
+}
+
+.carousel-indicators li{
+	border: 1px solid purple !important;
+}
+
+.carousel-indicators .active {
+	background-color: purple !important;
+}
+
+.carousel-purple-line {
+	width: 90%;
+	height: 15px;
+	background-color: purple;
+	bottom:0;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+
+.carousel-wrapper {
+	margin: 50px 0px;
+}
+
+.carousel {
+	border: 4px solid purple;
+	position: relative;
+}
+
 /* NOSOTROS */
 
+.mini-titulos {
+	margin: 50px 0px;
+}
+
+.nosotros-first-col {
+	background: image-url('historia.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 300px;
+}
+
+.nosotros-banner {
+	background: image-url('b_historia.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 400px;
+}
+
 /* ¿COMO CONTRIBUIR? */
+
+.comocontribuir-banner {
+	background: image-url('b_comocontribuir.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 350px;
+}
+
+.texto-como-contribuir {
+	margin: 50px 0px;
+
+	& p {
+		padding:10px 0px;
+	}
+}
 
 /* PROGRAMA SOCIAL */
 
 /* CONTACTO */
+
+/* @medias */
+
+@media only screen and(max-width:767px) {
+
+	.navbar-nav {
+		position: relative;
+		right: auto;
+		bottom: auto;
+		text-align: center;
+	}
+}
 

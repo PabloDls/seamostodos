@@ -6,6 +6,8 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   
 </head>
@@ -14,6 +16,8 @@
 	<%= render 'layouts/header' %> 
 
 <%= yield %>
+
+	<%= render 'layouts/footer' %>
 
 </body>
 </html>
