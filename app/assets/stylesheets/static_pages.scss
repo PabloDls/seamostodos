@@ -24,8 +24,17 @@ $secondary-purple: #836C8E;
 	}
 }
 
-.sentence {
+.comillas-izq {
+	margin-right: 30px;
+	margin-bottom: 40px;
+}
 
+.comillas-der {
+	margin-left: 30px;
+	margin-bottom: 40px;
+}
+
+.sentence {
 }
 
 .author {
@@ -151,7 +160,7 @@ $secondary-purple: #836C8E;
 .valores-purple-line {
 	width: 90%;
 	height: 15px;
-	background-color: purple;
+	background-color: $secondary-purple;
 	display: block;
 	margin: 40px auto 0px auto;
 }
@@ -205,6 +214,8 @@ $secondary-purple: #836C8E;
 
 .mini-titulos {
 	margin: 50px 0px;
+	color: $primary-purple;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .nosotros-first-col {
@@ -237,7 +248,31 @@ $secondary-purple: #836C8E;
 
 /* PROGRAMA SOCIAL */
 
+.programa-social-list {
+	& > li {
+		margin: 30px 0px;
+	}
+}
+
+.programa-social-banner {
+	background: image-url('b_preguntas1.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 350px;
+	margin-top: 50px;
+}
+
+.programa-social-banner-2 {
+	background: image-url('b_preguntas2.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 350px;
+	margin-top: 50px;
+}
+
 /* CONTACTO */
+
+.contacto {
+	background-color: #E8E8E8;
+}
 
 /* @medias */
 
@@ -248,6 +283,10 @@ $secondary-purple: #836C8E;
 		right: auto;
 		bottom: auto;
 		text-align: center;
+
+		& a {
+			border-right: none;
+		}
 	}
 }
 

@@ -1,0 +1,28 @@
+<div class="container">
+	<h3 class="mini-titulos"> CONTÁCTANOS</h3>
+</div>
+
+<section class="contacto">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<%= form_tag(send_mail_path, name: "forma_mail", multipart: true, class: 'allcontact', multipart: true) do %>
+
+						<p>Nombre:</p>
+					<%= text_field_tag 'name', nil, class: 'theform contactform' %><br>
+
+						<p>Correo:</p>
+					<%= email_field_tag 'email', nil, class: 'theform contactform' %><br>
+
+						<p>Comentarios:</p>
+					<%= text_area_tag 'comments', nil, class: 'theform contactform', style: "height:100px", rows: 7 %><br>
+
+					<%= submit_tag "Enviar", class: 'buttonform pull-right thebutton' %>
+
+					<% end %>
+			</div>
+			<div class="col-sm-5">
+			</div>
+		</div>
+	</div>
+</section>
