@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   match '/contacto', to: "static_pages#contacto", via: :get
 
+  match "/send_mail", to: "static_pages#send_mail", via: 'post'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
