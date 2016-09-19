@@ -8,23 +8,33 @@
 			<div class="col-sm-7">
 				<%= form_tag(send_mail_path, name: "forma_mail", multipart: true, class: 'allcontact', multipart: true) do %>
 
-						<p>Nombre:</p>
-					<%= text_field_tag 'name', nil, class: 'theform contactform' %><br>
+				<div class="row">
+					<div class="col-sm-6">
+						<p class="input-tag">NOMBRE:</p>
+					<%= text_field_tag 'name', nil, class: 'contact-input' %><br>
 
-						<p>Correo:</p>
-					<%= email_field_tag 'email', nil, class: 'theform contactform' %><br>
+						<p class="input-tag">CORREO:</p>
+					<%= email_field_tag 'email', nil, class: 'contact-input' %><br>
 
-						<p>Telefono:</p>
-					<%= text_field_tag 'tel', nil, class: "theform contactform"%><br>
+						<p class="input-tag">TÉLEFONO:</p>
+					<%= text_field_tag 'tel', nil, class: "contact-input"%><br>
 
-						<p>Comentarios:</p>
-					<%= text_area_tag 'comments', nil, class: 'theform contactform', style: "height:100px", rows: 7 %><br>
+					</div>
+					<div class="col-sm-6">
 
-					<%= submit_tag "Enviar", class: 'buttonform pull-right thebutton' %>
+						<p class="input-tag">COMENTARIOS:</p>
+					<%= text_area_tag 'comments', nil, class: 'contact-input', rows: 7 %><br>
+					</div>
+				</div>
+
+
+					<%= submit_tag "Enviar", class: 'thebutton' %>
 
 					<% end %>
 			</div>
 			<div class="col-sm-5">
+
+				<div><%= %> <p>Representatnte Legal<br>Lic. Ma. Griselda Calderón Solís</p></div>
 			</div>
 		</div>
 	</div>
