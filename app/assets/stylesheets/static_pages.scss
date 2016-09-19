@@ -34,8 +34,7 @@ p {
 	background-color: #803E98;
 	font-size: 22px;
 	text-align: center;
-	padding: 20px 0px;
-	line-height: 1px;
+	padding: 40px 0px;
 	font-family: 'Josefin Sans', sans-serif;
 
 	& p {
@@ -48,16 +47,13 @@ p {
 }
 
 .comillas-izq {
-	margin-right: 30px;
-	margin-bottom: 40px;
+	margin-right: 20px;
+	margin-top: -30px;
 }
 
 .comillas-der {
-	margin-left: 30px;
-	margin-bottom: 40px;
-}
-
-.sentence {
+	margin-left: 20px;
+	margin-top: -30px;
 }
 
 .author {
@@ -336,10 +332,49 @@ p {
 
 /* PROGRAMA SOCIAL */
 
+.programa-social {
+	margin-top: 15px;
+	position: relative;
+}
+
+.programa-social-2 {
+	position: relative;
+}
+
+.mini-titulos-programa-social-primero {
+	margin: 50px 0px 40px 0px;
+	color: $primary-purple;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.mini-titulos-programa-social {
+	margin: 40px 0px 20px 0px;
+	color: $primary-purple;
+	font-family: 'Montserrat', sans-serif;
+}
+
 .programa-social-list {
-	& > li {
+
+	padding-left: 0px;
+	& > li{
 		margin: 30px 0px;
+		list-style-type: none;
 	}
+
+	& > li:before {
+		content:"•";
+		color:$secondary-purple;		
+	}
+}
+
+.programa-social-purple-line {
+	width: 90%;
+	height: 15px;
+	background-color: $secondary-purple;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0px auto 0px auto;
 }
 
 .programa-social-banner {
