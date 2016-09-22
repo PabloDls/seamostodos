@@ -16,7 +16,7 @@ $primary-purple: #7F3F98;
 $secondary-purple: #836C8E;
 
 body {
-	font-size: 16px !important;
+	font-size: 18px !important;
 	font-family: 'Josefin Sans', sans-serif !important;
 }
 
@@ -282,6 +282,7 @@ p {
 
 .objetivos {
 	margin: 50px 0px;
+	height: 337px;
 
 	& > div {
 		border:1px solid purple;
@@ -406,7 +407,11 @@ p {
 
 .contacto {
 	background-color: #E8E8E8;
-	padding: 50px 0px;
+	padding: 50px 0px 0px 0px;
+}
+
+.info-contact {
+	padding-bottom: 50px;
 }
 
 .input-tag {
@@ -427,6 +432,33 @@ p {
 	background-color: $secondary-purple;
 	border:none;
 	color:#fff;
+}
+
+.contact-icon {
+	display: inline-block;
+    vertical-align: middle; 
+}
+
+.contact-text {
+	display: inline-block;
+    vertical-align: middle; 
+    margin-bottom: 0px;
+}
+
+.image-text {
+	margin: 15px 0px;
+}
+
+#googleMap {
+	height: 500px;
+}
+
+.contacto-purple-line {
+	width: 80%;
+	height: 20px;
+	background-color: $secondary-purple;
+	display: block;
+	margin: 50px auto 100px auto;
 }
 
 /* @medias */
@@ -465,7 +497,7 @@ p {
 	}
 
 	.objetivos {
-		height: 437px;
+		height: 490px;
 	}
 
 	.text > p {

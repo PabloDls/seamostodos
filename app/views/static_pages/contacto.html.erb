@@ -4,8 +4,8 @@
 
 <section class="contacto">
 	<div class="container">
-		<div class="row">
-			<div class="col-sm-7">
+		<div class="row info-contact">
+			<div class="col-sm-push-1 col-sm-7">
 				<%= form_tag(send_mail_path, name: "forma_mail", multipart: true, class: 'allcontact', multipart: true) do %>
 
 				<div class="row">
@@ -32,14 +32,75 @@
 
 					<% end %>
 			</div>
-			<div class="col-sm-5">
+			<div class="col-sm-push-1 col-sm-4">
 
-				<div><%= image_tag("c_representante.png")%> <p style="display:inline-block;")>Representatnte Legal<br>Lic. Ma. Griselda Calderón Solís</p></div>
-				<div><%= image_tag("c_telefono.png") %> <p style="display:inline-block;">8115438953 &nsbp; 80 32 70 71</p></div>
-				<div><%= image_tag("c_correo.png")%> <p style="display:inline-block;">seamostodos.ac@hotmail.com</p></div>
-				<div><%= image_tag("c_ubicacion.png")%> <p style="display:inline-block;">Golfo de Panamá 105 <br> Col. Lomas del Poniente, <br> Snata Catarina, N.L. C.P 66369</p></div>
-				<div><%= image_tag("c_facebook.png")%> <p>Seamos Todos AC</p></div>
+				<div class="image-text">
+					<%= image_tag("c_representante.png", class: "contact-icon")%> 
+
+					<p class="contact-text">Representante Legal <br>Lic. Ma. Griselda Calderón Solís</p>
+				</div>
+
+				<div class="image-text">
+					<%= image_tag("c_telefono.png", class: "contact-icon-2") %>
+					
+					<p class="contact-text">8115438953 &nsbp; 80 32 70 71</p>
+				</div>
+
+				<div class="image-text">
+					<%= image_tag("c_correo.png", class: "contact-icon-3")%>
+
+					<p class="contact-text">seamostodos.ac@hotmail.com</p>
+				</div>
+
+				<div class="image-text">
+					<%= image_tag("c_ubicacion.png", class: "contact-icon")%>
+
+					<p class="contact-text">Golfo de Panamá 105<br> Col. Lomas del Poniente, <br>Santa Catarina, N.L. C.P 66369</p>
+				</div>
+
+				<div class="image-text">
+					<%= image_tag("c_facebook.png", class: "contact-icon-5")%>
+
+					<p class="contact-text">Seamos Todos AC</p>
+				</div>	
+
 			</div>
 		</div>
 	</div>
+
+	<div id="googleMap"></div>
+
 </section>
+
+<section>
+		<div class="contacto-purple-line"></div>
+</section>
+
+
+
+
+<script>
+var start = function() {
+    // do stuff here.
+    initialize();
+};
+
+$(document).ready(start);
+$(document).on('page:change', start);
+
+	function initialize() {
+	  var mapProp = {
+	    center:new google.maps.LatLng(25.697125,-100.45496),
+	    zoom:17,
+	    mapTypeId:google.maps.MapTypeId.ROADMAP
+	  };
+	  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	  var marker = new google.maps.Marker({
+	  	position: {lat: 25.697125, lng: -100.45496},
+	  	map: map,
+	  	title: 'Fantasma Films'
+	  })
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
