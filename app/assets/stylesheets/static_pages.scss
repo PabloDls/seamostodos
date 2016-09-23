@@ -342,6 +342,21 @@ p {
 	margin: 25px auto 0px auto;
 }
 
+.como-contribuir-list {
+
+	color:$secondary-purple;
+
+	& > li{
+		list-style-type: none;
+	}
+
+	& > li:before {
+		content:"•";
+		color:$secondary-purple;	
+		font-size: 20px;
+	}
+}
+
 /* PROGRAMA SOCIAL */
 .programa-social {
 	position: relative;
