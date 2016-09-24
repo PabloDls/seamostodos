@@ -75,8 +75,11 @@ p {
 
 /* HEADER */
 
+.logo {
+}
+
 .the-navbar {
-	margin-bottom: 10px !important;
+	margin: 10px 0px !important;
 	border-radius: 0px !important;
 	background-color: #fff;
 	color:$primary-purple;
@@ -527,13 +530,21 @@ p {
 
 @media only screen and(max-width: 1200px) {
 
+	.logo {
+		height: 150px;
+	}
+
+	.navbar-nav > li > a {
+		padding: 8px 15px !important;
+	}
+
 	.imagenes-redes-de-apoyo {
 		margin: 0px 10px;
 	}
 
 	.home-sentence {
 		line-height: 30px;
-		margin-left: 0px;
+		margin-left: 25px;
 	}
 
 	.nosotros-purple-line {
@@ -554,6 +565,11 @@ p {
 }
 
 @media only screen and(max-width: 991px) {
+
+	.navbar-nav > li > a {
+		font-size: 14px;
+		padding: 5px 8px !important;
+	}
 
 	.imagenes-redes-de-apoyo {
 		height: 75px !important;
@@ -581,6 +597,11 @@ p {
 }
 
 @media only screen and(max-width:767px) {
+
+	.navbar-nav > li > a {
+		font-size: 18px;
+		padding: 8px 25px !important;
+	}
 
 	.imagenes-redes-de-apoyo {
 		margin-top: 10px;
@@ -621,6 +642,7 @@ p {
 
 	.valores {
 		height: auto;
+		margin-top: 80px;
 
 		& p {
 			margin-bottom: 35px;
@@ -648,6 +670,10 @@ p {
 }
 
 @media only screen and(max-width: 500px) {
+
+	.the-mail {
+		font-size: 12px;
+	}
 
 	.text > p {
 		padding: 25px;
