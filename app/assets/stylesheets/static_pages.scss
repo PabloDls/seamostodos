@@ -67,12 +67,6 @@ p {
 	text-align: right;
 }
 
-.banner-home {
-	background: image-url('h_banner.jpg') no-repeat center center !important;
-	background-size: cover !important;
-	height: 500px;
-}
-
 .small-banner {
 	background: image-url('h_bannerchico.jpg') no-repeat center center !important;
 	background-size: cover !important;
@@ -149,6 +143,29 @@ p {
 }
 
 /* INICIO */
+
+.banner-home {
+	background: image-url('h_banner.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 500px;
+	position: relative;
+}
+
+.home-sentence-wrapper {
+	background-color: $secondary-purple;
+	padding: 15px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+
+.home-sentence {
+	color:#fff !important;
+	margin: 0px;
+	margin-left: 50px;
+}
 
 .text {
 	text-align: center;
@@ -233,14 +250,9 @@ p {
 
 .carousel-purple-line {
 	width: 90%;
+	margin: 40px auto;
 	height: 15px;
-	background-color: purple;
-	bottom:0;
-	left: 0;
-	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
+	background-color: $secondary-purple;
 }
 
 .carousel-wrapper {
@@ -314,7 +326,6 @@ p {
 	background: image-url('b_historia.jpg') no-repeat center center !important;
 	background-size: cover !important;
 	height: 400px;
-	margin-bottom: 50px;
 }
 
 /* ¿COMO CONTRIBUIR? */
@@ -355,6 +366,19 @@ p {
 		color:$secondary-purple;	
 		font-size: 20px;
 	}
+}
+
+.marco-teorico {
+	display: block;
+	margin:0px auto;
+	width: 90%;
+}
+
+.marco-teorico-purple-line {
+	width: 90%;
+	height: 15px;
+	background-color: $secondary-purple;
+	margin: 50px auto 75px auto;
 }
 
 /* PROGRAMA SOCIAL */
@@ -485,6 +509,11 @@ p {
 /* @medias */
 
 @media only screen and(max-width: 1200px) {
+
+	.home-sentence {
+		line-height: 30px;
+		margin-left: 0px;
+	}
 
 	.nosotros-purple-line {
 		margin-top: 10px;

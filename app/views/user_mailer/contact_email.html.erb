@@ -1,4 +1,58 @@
-<%= @name%>
-<%= @email%>
-<%= @tel%>
-<%= @body%>
+<!DOCTYPE html>
+<html>
+<head>
+      <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+        <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+
+    <table width="100%" style="width:100%!important;">
+         <tr>
+          <td>
+              <table width="600" align="center" style="background-color: #836C8E; color:white; text-align: center; min-width: 600px;">
+                  <tr>
+                      <td>
+                          <h1>Seamos Todos</h1>
+                      </td>
+                  </tr>
+              </table>
+              <table width="600" align="center" style="background-color: #f5f5f5; padding: 20px; min-width: 600px;">
+
+                <tr style="padding: 20px; color: #7F3F98;">
+                    <td>
+                        <p style="font-size:16px">Nombre: <span style="color: #999;"> <%= @name %></span></p>
+                    </td>
+                </tr>
+
+                  <tr style="padding: 20px; color: #7F3F98;">
+                     <td>
+                        <p style="font-size:16px">Email: <span style="color: #999;">   <%= @email %> </span></p>
+                    </td>
+                </tr>
+                <tr style="padding: 20px; color: #7F3F98;">
+                     <td>
+                        <p style="font-size:16px">Telefóno: <span style="color: #999;">   <%= @tel %> </span></p>
+                    </td>
+                </tr>
+                <tr style="padding: 20px; color: #7F3F98;">
+                    <td>
+                        <p style="font-size:16px">Mensaje: <span style="color: #999;"><%= @body %> </span></p>
+                    </td>
+                </tr>
+              </table>
+
+              <table width="600" align="center" style="background-color: #836C8E; color:white; text-align: center; padding: 10px; min-width: 600px;">
+                  <tr>
+                      <td>
+                          © Copyright Seamos Todos 2016
+                      </td>
+                  </tr>
+              </table>
+          </td>
+         </tr>
+        </table>
+    
+  </body>
+</html>
