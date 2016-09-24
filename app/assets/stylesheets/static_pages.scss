@@ -225,7 +225,15 @@ p {
 }
 
 .carousel {
-	height: 300px;
+	padding: 100px 0px;
+}
+
+.carousel-header {
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	margin-top: 40px;
 }
 
 .glyphicon-chevron-left, .glyphicon-chevron-right  {
@@ -250,9 +258,13 @@ p {
 
 .carousel-purple-line {
 	width: 90%;
-	margin: 40px auto;
+	margin: 0px auto;
 	height: 15px;
 	background-color: $secondary-purple;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .carousel-wrapper {
@@ -262,6 +274,11 @@ p {
 .carousel {
 	border: 4px solid purple;
 	position: relative;
+}
+
+.imagenes-redes-de-apoyo {
+	display: inline-block !important;
+	margin: 0px 20px;
 }
 
 /* NOSOTROS */
@@ -510,6 +527,10 @@ p {
 
 @media only screen and(max-width: 1200px) {
 
+	.imagenes-redes-de-apoyo {
+		margin: 0px 10px;
+	}
+
 	.home-sentence {
 		line-height: 30px;
 		margin-left: 0px;
@@ -534,6 +555,10 @@ p {
 
 @media only screen and(max-width: 991px) {
 
+	.imagenes-redes-de-apoyo {
+		height: 75px !important;
+	}
+
 	.nosotros-first-col {
 		height: 385px;
 	}
@@ -556,6 +581,11 @@ p {
 }
 
 @media only screen and(max-width:767px) {
+
+	.imagenes-redes-de-apoyo {
+		margin-top: 10px;
+	}
+
 
 	.objetivos-row {
 
