@@ -67,12 +67,6 @@ p {
 	text-align: right;
 }
 
-.banner-home {
-	background: image-url('h_banner.jpg') no-repeat center center !important;
-	background-size: cover !important;
-	height: 500px;
-}
-
 .small-banner {
 	background: image-url('h_bannerchico.jpg') no-repeat center center !important;
 	background-size: cover !important;
@@ -81,8 +75,11 @@ p {
 
 /* HEADER */
 
+.logo {
+}
+
 .the-navbar {
-	margin-bottom: 10px !important;
+	margin: 10px 0px !important;
 	border-radius: 0px !important;
 	background-color: #fff;
 	color:$primary-purple;
@@ -150,6 +147,29 @@ p {
 
 /* INICIO */
 
+.banner-home {
+	background: image-url('h_banner.jpg') no-repeat center center !important;
+	background-size: cover !important;
+	height: 500px;
+	position: relative;
+}
+
+.home-sentence-wrapper {
+	background-color: $secondary-purple;
+	padding: 15px;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 50px;
+	margin-right: 50px;
+}
+
+.home-sentence {
+	color:#fff !important;
+	margin: 0px;
+	margin-left: 50px;
+}
+
 .text {
 	text-align: center;
 	padding: 80px 0px;
@@ -208,7 +228,15 @@ p {
 }
 
 .carousel {
-	height: 300px;
+	padding: 100px 0px;
+}
+
+.carousel-header {
+	position: absolute;
+	top:0;
+	left:0;
+	right: 0;
+	margin-top: 40px;
 }
 
 .glyphicon-chevron-left, .glyphicon-chevron-right  {
@@ -233,14 +261,13 @@ p {
 
 .carousel-purple-line {
 	width: 90%;
+	margin: 0px auto;
 	height: 15px;
-	background-color: purple;
-	bottom:0;
+	background-color: $secondary-purple;
+	position: absolute;
+	bottom: 0;
 	left: 0;
 	right: 0;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
 }
 
 .carousel-wrapper {
@@ -250,6 +277,11 @@ p {
 .carousel {
 	border: 4px solid purple;
 	position: relative;
+}
+
+.imagenes-redes-de-apoyo {
+	display: inline-block !important;
+	margin: 0px 20px;
 }
 
 /* NOSOTROS */
@@ -314,7 +346,6 @@ p {
 	background: image-url('b_historia.jpg') no-repeat center center !important;
 	background-size: cover !important;
 	height: 400px;
-	margin-bottom: 50px;
 }
 
 /* ¿COMO CONTRIBUIR? */
@@ -355,6 +386,19 @@ p {
 		color:$secondary-purple;	
 		font-size: 20px;
 	}
+}
+
+.marco-teorico {
+	display: block;
+	margin:0px auto;
+	width: 90%;
+}
+
+.marco-teorico-purple-line {
+	width: 90%;
+	height: 15px;
+	background-color: $secondary-purple;
+	margin: 50px auto 75px auto;
 }
 
 /* PROGRAMA SOCIAL */
@@ -486,6 +530,23 @@ p {
 
 @media only screen and(max-width: 1200px) {
 
+	.logo {
+		height: 150px;
+	}
+
+	.navbar-nav > li > a {
+		padding: 8px 15px !important;
+	}
+
+	.imagenes-redes-de-apoyo {
+		margin: 0px 10px;
+	}
+
+	.home-sentence {
+		line-height: 30px;
+		margin-left: 25px;
+	}
+
 	.nosotros-purple-line {
 		margin-top: 10px;
 	}
@@ -504,6 +565,15 @@ p {
 }
 
 @media only screen and(max-width: 991px) {
+
+	.navbar-nav > li > a {
+		font-size: 14px;
+		padding: 5px 8px !important;
+	}
+
+	.imagenes-redes-de-apoyo {
+		height: 75px !important;
+	}
 
 	.nosotros-first-col {
 		height: 385px;
@@ -527,6 +597,16 @@ p {
 }
 
 @media only screen and(max-width:767px) {
+
+	.navbar-nav > li > a {
+		font-size: 18px;
+		padding: 8px 25px !important;
+	}
+
+	.imagenes-redes-de-apoyo {
+		margin-top: 10px;
+	}
+
 
 	.objetivos-row {
 
@@ -562,6 +642,7 @@ p {
 
 	.valores {
 		height: auto;
+		margin-top: 80px;
 
 		& p {
 			margin-bottom: 35px;
@@ -589,6 +670,10 @@ p {
 }
 
 @media only screen and(max-width: 500px) {
+
+	.the-mail {
+		font-size: 12px;
+	}
 
 	.text > p {
 		padding: 25px;
