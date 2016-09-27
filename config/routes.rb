@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   match '/comocontribuir', to: "static_pages#comocontribuir", via: :get
 
+  match '/eventos', to: "static_pages#eventos", via: :get
+
   match '/programasocial', to: "static_pages#programasocial", via: :get
 
   match '/contacto', to: "static_pages#contacto", via: :get

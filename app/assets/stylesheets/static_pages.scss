@@ -67,10 +67,12 @@ p {
 	text-align: right;
 }
 
+.big-banner {
+	height: 600px;
+}
+
 .small-banner {
-	background: image-url('h_bannerchico.jpg') no-repeat center center !important;
-	background-size: cover !important;
-	height: 330px;
+	height: 500px;
 }
 
 /* HEADER */
@@ -149,10 +151,15 @@ p {
 
 .banner-home {
 	background: image-url('h_banner.jpg') no-repeat center center !important;
-	background-size: cover !important;
-	height: 500px;
 	position: relative;
+	background-size: cover !important;
 }
+
+.second-banner-home {
+	background: image-url('h_bannerchico.jpg') no-repeat center center !important;
+	background-size: cover !important
+}
+
 
 .home-sentence-wrapper {
 	background-color: $secondary-purple;
@@ -229,6 +236,8 @@ p {
 
 .carousel {
 	padding: 100px 0px;
+	text-align: center;
+	position: relative;
 }
 
 .carousel-header {
@@ -240,11 +249,7 @@ p {
 }
 
 .glyphicon-chevron-left, .glyphicon-chevron-right  {
-	color: black !important;
-}
-
-.carousel {
-	text-align: center;
+	color: $primary-purple;
 }
 
 .carousel-control {
@@ -272,11 +277,6 @@ p {
 
 .carousel-wrapper {
 	margin: 50px 0px;
-}
-
-.carousel {
-	border: 4px solid purple;
-	position: relative;
 }
 
 .imagenes-redes-de-apoyo {
@@ -345,7 +345,6 @@ p {
 .nosotros-banner {
 	background: image-url('b_historia.jpg') no-repeat center center !important;
 	background-size: cover !important;
-	height: 400px;
 }
 
 /* ¿COMO CONTRIBUIR? */
@@ -359,7 +358,6 @@ p {
 .comocontribuir-banner {
 	background: image-url('b_comocontribuir.jpg') no-repeat center center !important;
 	background-size: cover !important;
-	height: 350px;
 }
 
 .texto-como-contribuir > p{
@@ -399,6 +397,14 @@ p {
 	height: 15px;
 	background-color: $secondary-purple;
 	margin: 50px auto 75px auto;
+}
+
+/* EVENTOS */
+
+.mini-titulo-eventos {
+	margin:50px 0px;
+	color: $primary-purple;
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* PROGRAMA SOCIAL */
@@ -451,15 +457,13 @@ p {
 }
 
 .programa-social-banner {
-	background: image-url('b_preguntas1.jpg') no-repeat center center !important;
+	background: image-url('b_preguntas2.jpg') no-repeat center center !important;
 	background-size: cover !important;
-	height: 350px;
 }
 
 .programa-social-banner-2 {
-	background: image-url('b_preguntas2.jpg') no-repeat center center !important;
+	background: image-url('b_preguntas1.jpg') no-repeat center center !important;
 	background-size: cover !important;
-	height: 350px;
 }
 
 /* CONTACTO */

@@ -9,6 +9,9 @@ class StaticPagesController < ApplicationController
 	def comocontribuir
 	end
 
+	def eventos
+	end
+
 	def programasocial
 	end
 
