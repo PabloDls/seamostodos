@@ -10,6 +10,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def eventos
+		@pictures = Acontecimiento.all
 	end
 
 	def programasocial

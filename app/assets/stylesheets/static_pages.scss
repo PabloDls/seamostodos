@@ -407,6 +407,12 @@ p {
 	font-family: 'Montserrat', sans-serif;
 }
 
+.cross {
+	color:red;
+	position: absolute !important;
+	right: 17px;
+}
+
 /* PROGRAMA SOCIAL */
 .programa-social {
 	position: relative;
@@ -528,6 +534,54 @@ p {
 	background-color: $secondary-purple;
 	display: block;
 	margin: 50px auto 100px auto;
+}
+
+/* ADMIN */
+
+.admin-form, .contact-form {
+	margin: 40px auto;
+	background-color: white;
+	border: 1px solid lightgray;
+	padding: 10px;
+	font-size: 15px;
+	max-width: 700px;
+	& h2, h3 {
+	  text-align: center;
+	}
+	label {
+		margin: 10px 0px;
+	}
+	input, textarea {
+		width: 100%;
+		padding:5px;
+		margin-bottom: 10px;
+		border-radius: 0px;
+		border: 1px solid lightgray;
+
+	}
+	select {
+		padding:5px;
+		margin-bottom: 10px;
+
+	}
+	input.btn-products {
+		font-size: 18px;
+		padding: 5px 15px;
+		border: 1px solid black;
+		background-color: white;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.checkbox {
+		text-align:left;
+		input {
+			width:10px;
+			margin-left:0px !important;
+			margin-top:10px;
+		}
+	}
+
 }
 
 /* @medias */
