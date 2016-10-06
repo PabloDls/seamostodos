@@ -1,5 +1,5 @@
-  <div id="picture_<%= picture.id %>" class="col-sm-3">
-  	<%= image_tag picture.image_url, class: "img-responsive" %>
+  <div id="picture_<%= picture.id %>" class="col-sm-3 image-holder-events">
+  	<%= image_tag picture.image_url, class: "events-images" %>
 
   	<% if admin_signed_in? %>
   	<%= link_to '<span class="glyphicon glyphicon-remove cross"></span>'.html_safe, acontecimiento_path(picture), method: :delete, confirm: "¿Estás seguro?", remote: true %>

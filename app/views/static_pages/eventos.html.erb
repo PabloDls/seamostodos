@@ -1,22 +1,17 @@
-<div class="container">
-
-	<h3 class="mini-titulo-eventos">EVENTOS</h3>
-
-
-	<% if admin_signed_in? %>
-
-	<%= form_for Acontecimiento.new, remote: true do |f| %>
-	    <%= f.file_field :image %>
-	     <%= f.submit "Save" %>
-	<% end %>
-
-	<% end %>
-
-
-<div id="pictures_section" class="row">
- <% @pictures.each do |picture| %>
-   <%= render 'layouts/images', picture: picture  %>
-  <% end %>
-</div>
-	
+<div class="min-height">
+	<div class="container">
+		<h3 class="mini-titulo-eventos">EVENTOS</h3>
+			
+			<% if admin_signed_in? %>
+				<%= form_for Acontecimiento.new, remote: true do |f| %>
+		    		<%= f.file_field :image %>
+		    		<%= f.submit "Save", class: "submit-button" %>
+				<% end %>
+			<% end %>
+		<div id="pictures_section" class="row">
+		 <% @pictures.each do |picture| %>
+		   <%= render 'layouts/images', picture: picture  %>
+		  <% end %>
+		</div>
+	</div>
 </div>

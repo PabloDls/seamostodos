@@ -77,15 +77,17 @@ p {
 
 /* HEADER */
 
-.logo {
-}
-
 .the-navbar {
 	margin: 10px 0px !important;
 	border-radius: 0px !important;
 	background-color: #fff;
 	color:$primary-purple;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-holder {
+	position: relative;
+	margin-left: 150px !important;
 }
 
 .navbar-nav {
@@ -103,6 +105,10 @@ p {
 	 		background-color: $secondary-purple !important;
 	 	}
 	 }
+}
+
+.navbar-nav > li {
+	margin-top: 10px;
 }
 
 .navbar-nav > li > a {
@@ -401,10 +407,28 @@ p {
 
 /* EVENTOS */
 
+.min-height {
+	min-height: 95vh;
+}
+
 .mini-titulo-eventos {
 	margin:50px 0px;
 	color: $primary-purple;
 	font-family: 'Montserrat', sans-serif;
+}
+
+.submit-button {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.image-holder-events {
+	margin-bottom: 20px;
+}
+
+.events-images {
+	height: 200px;
+	width: 100%;
 }
 
 .cross {
@@ -588,12 +612,8 @@ p {
 
 @media only screen and(max-width: 1200px) {
 
-	.logo {
+	.events-images {
 		height: 150px;
-	}
-
-	.navbar-nav > li > a {
-		padding: 8px 15px !important;
 	}
 
 	.imagenes-redes-de-apoyo {
@@ -624,9 +644,8 @@ p {
 
 @media only screen and(max-width: 991px) {
 
-	.navbar-nav > li > a {
-		font-size: 14px;
-		padding: 5px 8px !important;
+	.events-images {
+		height: 100px;
 	}
 
 	.imagenes-redes-de-apoyo {
@@ -655,6 +674,14 @@ p {
 }
 
 @media only screen and(max-width:767px) {
+
+	.navbar-holder {
+		margin-left: -15px !important;
+	}
+
+	.events-images {
+		height: auto;
+	}
 
 	.navbar-nav > li > a {
 		font-size: 18px;
