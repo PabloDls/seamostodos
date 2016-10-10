@@ -7,6 +7,6 @@ class UserMailer < ApplicationMailer
 		@email = email
 		@tel = tel
 		@body = body
-		mail(to: "pablodls96@gmail.com", subject: "Contacto Página Seamos Todos")
+		mail(to: "rafa.lozano@noxu.mx", subject: "Contacto Página Seamos Todos")
 	end
 end

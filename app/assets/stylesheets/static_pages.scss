@@ -77,8 +77,12 @@ p {
 
 /* HEADER */
 
+.logo {
+	width: 150px;
+}
+
 .the-navbar {
-	margin: 10px 0px !important;
+	margin: 10px 0px 0px 0px!important;
 	border-radius: 0px !important;
 	background-color: #fff;
 	color:$primary-purple;
@@ -95,7 +99,8 @@ p {
 	position: absolute;
 	right: 50px;
 	bottom: 0;
-
+	margin-bottom: 10px !important;
+ 
 	 & a {
 	 	color:$primary-purple;
 	 	border-right: 2px solid $primary-purple;
@@ -156,7 +161,7 @@ p {
 /* INICIO */
 
 .banner-home {
-	background: image-url('h_banner.jpg') no-repeat center center !important;
+	background: image-url('b_preguntas1.jpg') no-repeat center center !important;
 	position: relative;
 	background-size: cover !important;
 }
@@ -466,7 +471,9 @@ p {
 
 .programa-social-list {
 
+	color:$secondary-purple;
 	padding-left: 0px;
+
 	& > li{
 		margin: 30px 0px;
 		list-style-type: none;
@@ -492,7 +499,7 @@ p {
 }
 
 .programa-social-banner-2 {
-	background: image-url('b_preguntas1.jpg') no-repeat center center !important;
+	background: image-url('mujeres.jpg') no-repeat center center !important;
 	background-size: cover !important;
 }
 
