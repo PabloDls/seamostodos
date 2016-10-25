@@ -19,8 +19,8 @@
         <li class="<%= 'navactive' if current_page?(root_path) %>"><%= link_to "INICIO", root_path %></li>
         <li class="<%= 'navactive' if current_page?(nosotros_path) %>"><%= link_to "NOSOTROS", nosotros_path %></li>
         <li class="<%= 'navactive' if current_page?(comocontribuir_path) %>"><%= link_to "¿COMO CONTRIBUIR?", comocontribuir_path %></li>
-        <li class="<%= 'navactive' if current_page?(eventos_path) %>"><%= link_to "EVENTOS", eventos_path %></li>
         <li class="<%= 'navactive' if current_page?(programasocial_path) %>"><%= link_to "PROGRAMA SOCIAL", programasocial_path %></li>
+         <li class="<%= 'navactive' if current_page?(eventos_path) %>"><%= link_to "EVENTOS", eventos_path %></li>
         <li class="<%= 'navactive' if current_page?(contacto_path) %>"><%= link_to "CONTACTO ", contacto_path %></li>
 
         <% if admin_signed_in? %>
